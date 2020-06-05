@@ -46,7 +46,7 @@ extension PersonDetailsController: UICollectionViewDataSource, UICollectionViewD
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return cellSpacing
+        return Theme.Screens.Home.Person.cellSpacing
     }
     
     func collectionView(_ collectionView: UICollectionView,
@@ -54,9 +54,4 @@ extension PersonDetailsController: UICollectionViewDataSource, UICollectionViewD
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         return PersonPhotoCell.size(collectionView)
     }
-}
-
-// MARK: - Constants used in PersonDetailsController
-private extension PersonDetailsController {
-    var cellSpacing: CGFloat { 15 }
 }
