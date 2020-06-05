@@ -16,10 +16,6 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
     private let defaultTint = UIColor.black
     private let defaultUnselectedTint = #colorLiteral(red: 0.3803921569, green: 0.3882352941, blue: 0.4666666667, alpha: 0.5681668134)
 
-    private let shadowRadius: CGFloat = 15
-    private let shadowOpacity: Float = 1
-    private let shadowOffset: CGSize = .init(width: 0, height: 10)
-
     private var launchScreen: LaunchScreen?
     
     required init?(coder aDecoder: NSCoder) { fatalError("") }
@@ -106,7 +102,7 @@ class MainTabBarController: UITabBarController, UITabBarControllerDelegate {
         // modifiy tab bar item insets
         guard let items = tabBar.items else { return }
         for item in items {
-            item.imageInsets = UIEdgeInsets(top: 16, left: 0, bottom: 0, right: 0)
+            item.imageInsets = UIEdgeInsets(top: Theme.Components.Padding.medium, left: 0, bottom: 0, right: 0)
         }
     }
 }
