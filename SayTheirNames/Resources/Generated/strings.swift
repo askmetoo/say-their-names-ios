@@ -21,8 +21,8 @@ internal enum L10n {
   internal static let home = L10n.tr("Localizable", "home")
   /// Petitions
   internal static let petitions = L10n.tr("Localizable", "petitions")
-  /// Settings
-  internal static let settings = L10n.tr("Localizable", "settings")
+  /// More
+  internal static let more = L10n.tr("Localizable", "more")
   /// verfied
   internal static let verified = L10n.tr("Localizable", "verified")
 }
